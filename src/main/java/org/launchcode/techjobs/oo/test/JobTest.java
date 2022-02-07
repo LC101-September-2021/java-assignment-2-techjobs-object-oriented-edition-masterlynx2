@@ -56,6 +56,12 @@ public class JobTest {
         assertTrue(tester3.getLocation() instanceof Location);
         assertTrue(tester3.getPositionType() instanceof PositionType);
         assertTrue(tester3.getCoreCompetency() instanceof CoreCompetency);
+
+        assertEquals("Product tester",tester3.getName());
+        assertEquals("ACME",tester3.getEmployer().getValue());
+        assertEquals("Desert",tester3.getLocation().getValue());
+        assertEquals("Quality control",tester3.getPositionType().getValue());
+        assertEquals("Persistence",tester.getCoreCompetency().getValue());
     }
 
     @Test
