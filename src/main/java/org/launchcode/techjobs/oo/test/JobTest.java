@@ -26,7 +26,7 @@ public class JobTest {
     Job tester2;
     Job toStringjob;
     Job tester3;
-    Job tester4;
+
     String result;
     String result2;
 
