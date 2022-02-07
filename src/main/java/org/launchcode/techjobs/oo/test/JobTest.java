@@ -43,7 +43,7 @@ public class JobTest {
     }
     @Test
     public void testSettingJobId() {
-        assertEquals(1, a2.getId(),.001);
+        assertEquals(1,a2.getId(),.001);
         assertEquals(2,a3.getId(),.001);
 
     }
@@ -61,7 +61,7 @@ public class JobTest {
         assertEquals("ACME",tester3.getEmployer().getValue());
         assertEquals("Desert",tester3.getLocation().getValue());
         assertEquals("Quality control",tester3.getPositionType().getValue());
-        assertEquals("Persistence",tester.getCoreCompetency().getValue());
+        assertEquals("Persistence",tester3.getCoreCompetency().getValue());
     }
 
     @Test
