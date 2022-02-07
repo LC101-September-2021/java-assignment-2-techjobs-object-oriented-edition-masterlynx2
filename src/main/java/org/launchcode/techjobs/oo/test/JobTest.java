@@ -43,8 +43,8 @@ public class JobTest {
     }
     @Test
     public void testSettingJobId() {
-        assertEquals(1, a2.getId());
-        assertEquals(2,a3.getId());
+        assertEquals(1, a2.getId(),.001);
+        assertEquals(2,a3.getId(),.001);
 
     }
 
