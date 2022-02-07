@@ -42,10 +42,12 @@ public class JobTest {
     }
     @Test
     public void testSettingJobId() {
-        assertFalse(a2.getId() == a3.getId());
+        //assertFalse(a2.getId() == a3.getId());
         assertTrue(a2.getId() - a3.getId()== -1);
 
     }
+
+    @test
     @Test
     public void testJobsForEquality() {
         assertFalse(tester instanceof Job != tester2 instanceof Job);
