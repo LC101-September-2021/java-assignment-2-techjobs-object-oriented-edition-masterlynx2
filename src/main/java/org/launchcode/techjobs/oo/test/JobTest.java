@@ -50,11 +50,11 @@ public class JobTest {
 
     @Test
     public void testJobConstructorSetsAllFields() {
-        assertEquals("Product tester", tester3.getName());
-        assertEquals("ACME", tester3.getEmployer());
-        assertEquals("Desert",tester3.getLocation());
-        assertEquals("Quality control",tester3.getPositionType());
-        assertEquals("Persistence", tester3.getCoreCompetency());
+        assertTrue(tester3.getName() instanceof String);
+        assertTrue(tester3.getEmployer() instanceof Employer);
+        assertTrue(tester3.getLocation() instanceof Location);
+        assertTrue(tester3.getPositionType() instanceof PositionType);
+        assertTrue(tester3.getCoreCompetency() instanceof CoreCompetency);
     }
 
     @Test
