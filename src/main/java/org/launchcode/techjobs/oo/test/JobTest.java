@@ -29,7 +29,7 @@ public class JobTest {
     Job tester4;
     String result;
     String result2;
-    String result3;
+
     Job tester5;
     Job tester8;
     @Before
