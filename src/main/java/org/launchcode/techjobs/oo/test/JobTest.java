@@ -90,7 +90,7 @@ public class JobTest {
         assertTrue(labelId && labelName && labelEmployer && labelLocation && labelPositionType && labelCoreCompetency == true);
     }
     @Test
-    public void testAvailable(){
+    public void testToStringContainsCorrectLabelsAndData(){
 
         assertEquals( "\nID: " + tester.getId() + "\n"+
                 "Name: Data not available\n"+
