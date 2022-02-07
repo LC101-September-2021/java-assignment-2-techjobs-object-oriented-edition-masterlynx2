@@ -38,6 +38,7 @@ public class JobTest {
         a3 = new Job();
         tester = new Job("", new Employer("ACME"), new Location(""), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         tester2 = new Job("", new Employer("ACME"), new Location(""), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        tester3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
     }
     @Test
@@ -46,7 +47,11 @@ public class JobTest {
         assertTrue(a2.getId() - a3.getId()== -1);
 
     }
-//
+
+    @Test
+    public void testJobConstructorSetsAllFields() {
+        assertEquals(true, tester != null);
+    }
 
     @Test
     public void testJobsForEquality() {
