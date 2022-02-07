@@ -96,7 +96,7 @@ public class JobTest {
 //        assertTrue(labelId && labelName && labelEmployer && labelLocation && labelPositionType && labelCoreCompetency == true);
     //}
     @Test
-    public void testToStringContainsCorrectLabelsAndData(){
+    public void testToStringContainsCorrectLabelsAndData() {
 
         Boolean labelId = tester.toString().contains("ID");
         Boolean labelName = tester.toString().contains("Name");
@@ -107,12 +107,13 @@ public class JobTest {
 
         assertTrue(labelId && labelName && labelEmployer && labelLocation && labelPositionType && labelCoreCompetency == true);
 
-        assertEquals( "\nID: " + tester.getId() + "\n"+
-                "Name: Data not available\n"+
-                "Employer: ACME\n"+
-                "Location: Data not available\n"+
-                "Position Type: Quality control\n"+
+        assertEquals("\nID: " + tester.getId() + "\n" +
+                "Name: Data not available\n" +
+                "Employer: ACME\n" +
+                "Location: Data not available\n" +
+                "Position Type: Quality control\n" +
                 "Core Competency: Persistence\n", tester.toString());
+        assertEquals(tester.toString(), tester.toString());
     }
     @Test
     public void testToStringHandlesEmptyField(){
