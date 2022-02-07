@@ -77,8 +77,20 @@ public class JobTest {
         assertEquals(firstChar, '\n');
         assertEquals(lastChar, '\n');
     }
+//    @Test
+//    public void testToStringLabel() {
+//
+//        Boolean labelId = tester.toString().contains("ID");
+//        Boolean labelName = tester.toString().contains("Name");
+//        Boolean labelEmployer = tester.toString().contains("Employer");
+//        Boolean labelLocation = tester.toString().contains("Location");
+//        Boolean labelPositionType = tester.toString().contains("PositionType");
+//        Boolean labelCoreCompetency = tester.toString().contains("CoreCompetency");
+//
+//        assertTrue(labelId && labelName && labelEmployer && labelLocation && labelPositionType && labelCoreCompetency == true);
+    }
     @Test
-    public void testToStringLabel() {
+    public void testToStringContainsCorrectLabelsAndData(){
 
         Boolean labelId = tester.toString().contains("ID");
         Boolean labelName = tester.toString().contains("Name");
@@ -88,9 +100,6 @@ public class JobTest {
         Boolean labelCoreCompetency = tester.toString().contains("CoreCompetency");
 
         assertTrue(labelId && labelName && labelEmployer && labelLocation && labelPositionType && labelCoreCompetency == true);
-    }
-    @Test
-    public void testToStringContainsCorrectLabelsAndData(){
 
         assertEquals( "\nID: " + tester.getId() + "\n"+
                 "Name: Data not available\n"+
