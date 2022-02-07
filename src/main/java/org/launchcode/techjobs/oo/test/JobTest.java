@@ -43,8 +43,8 @@ public class JobTest {
     }
     @Test
     public void testSettingJobId() {
-        assertFalse(a2.getId() == a3.getId());
-        //assertTrue(a2.getId() - a3.getId()== -1);
+        assertEquals(1, a2.getId());
+        assertEquals(2,a3.getId());
 
     }
 
