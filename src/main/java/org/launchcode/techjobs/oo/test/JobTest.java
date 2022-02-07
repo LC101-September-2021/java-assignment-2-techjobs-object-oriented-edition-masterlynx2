@@ -63,7 +63,7 @@ public class JobTest {
         assertFalse(tester instanceof Job != tester2 instanceof Job);
     }
     @Test
-    public void testToStringStartAndEndWithNewLine(){
+    public void testToStringStartsAndEndsWithNewLine(){
         Job job = new Job(
                 "Web Developer",
                 new Employer("LaunchCode"),
