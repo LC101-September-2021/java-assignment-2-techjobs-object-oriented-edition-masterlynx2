@@ -80,7 +80,7 @@ public class JobTest {
     @Test
     public void testAvailable(){
 
-        assertEquals( "\n ID: " + tester.getId() + "\n"+
+        assertEquals( "\nID: " + tester.getId() + "\n"+
                 "Name: Data not available\n"+
                 "Employer: ACME\n"+
                 "Location: Data not available\n"+

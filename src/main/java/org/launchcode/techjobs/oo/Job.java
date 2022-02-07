@@ -135,7 +135,7 @@ public class Job {
             setCoreCompetency(new CoreCompetency("Data not available"));
         }
 
-        output = String.format("\n ID: %d\n" +
+        output = String.format("\nID: %d\n" +
                 "Name: %s\n" +
                 "Employer: %s\n" +
                 "Location: %s\n" +
