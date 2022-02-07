@@ -42,7 +42,7 @@ public class JobTest {
     }
     @Test
     public void testSettingJobId() {
-        //assertFalse(a2.getId() == a3.getId());
+        assertFalse(a2.getId() == a3.getId());
         assertTrue(a2.getId() - a3.getId()== -1);
 
     }
