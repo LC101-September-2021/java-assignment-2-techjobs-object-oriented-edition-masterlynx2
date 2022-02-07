@@ -96,8 +96,8 @@ public class JobTest {
         Boolean labelName = tester.toString().contains("Name");
         Boolean labelEmployer = tester.toString().contains("Employer");
         Boolean labelLocation = tester.toString().contains("Location");
-        Boolean labelPositionType = tester.toString().contains("PositionType");
-        Boolean labelCoreCompetency = tester.toString().contains("CoreCompetency");
+        Boolean labelPositionType = tester.toString().contains("Position Type");
+        Boolean labelCoreCompetency = tester.toString().contains("Core Competency");
 
         assertTrue(labelId && labelName && labelEmployer && labelLocation && labelPositionType && labelCoreCompetency == true);
 
@@ -105,8 +105,8 @@ public class JobTest {
                 "Name: Data not available\n"+
                 "Employer: ACME\n"+
                 "Location: Data not available\n"+
-                "PositionType: Quality control\n"+
-                "CoreCompetency: Persistence\n", tester.toString());
+                "Position Type: Quality control\n"+
+                "Core Competency: Persistence\n", tester.toString());
     }
     @Test
     public void testToStringHandlesEmptyField(){

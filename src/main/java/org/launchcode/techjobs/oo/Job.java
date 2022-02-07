@@ -139,8 +139,8 @@ public class Job {
                 "Name: %s\n" +
                 "Employer: %s\n" +
                 "Location: %s\n" +
-                "PositionType: %s\n" +
-                "CoreCompetency: %s\n",id, name, employer.getValue(), location.getValue(),positionType.getValue(),coreCompetency.getValue());
+                "Position Type: %s\n" +
+                "Core Competency: %s\n",id, name, employer.getValue(), location.getValue(),positionType.getValue(),coreCompetency.getValue());
 
 //        if (this.getName().equals("")) {
 //            output += '\n' + "Name: Data not available";
