@@ -26,7 +26,7 @@ public class JobTest {
     Job tester2;
     Job toStringjob;
     Job tester3;
-
+    Job job;
     String result;
     String result2;
 
@@ -50,7 +50,7 @@ public class JobTest {
 
     @Test
     public void testJobConstructorSetsAllFields() {
-        assertTrue(tester3 instanceof Job);
+        //assertTrue(tester3 instanceof Job);
         assertTrue(tester3.getName() instanceof String);
         assertTrue(tester3.getEmployer() instanceof Employer);
         assertTrue(tester3.getLocation() instanceof Location);
@@ -119,9 +119,9 @@ public class JobTest {
     }
     @Test
     public void testToStringHandlesEmptyField(){
-        tester8 = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
-        System.out.println(tester.getLocation().getValue());
-        assertEquals("OOPS! This job does not seem to exist.",tester8.toString());
+        job = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
+        //System.out.println(tester.getLocation().getValue());
+        assertEquals("OOPS! This job does not seem to exist.",job.toString());
     }
 
 }
