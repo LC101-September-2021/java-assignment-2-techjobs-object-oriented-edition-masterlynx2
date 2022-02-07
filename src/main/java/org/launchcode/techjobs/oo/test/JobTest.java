@@ -50,7 +50,11 @@ public class JobTest {
 
     @Test
     public void testJobConstructorSetsAllFields() {
-        assertEquals(true, tester != null);
+        assertEquals("Product tester", tester3.getName());
+        assertEquals("ACME", tester3.getEmployer());
+        assertEquals("Desert",tester3.getLocation());
+        assertEquals("Quality control",tester3.getPositionType());
+        assertEquals("Persistence", tester3.getCoreCompetency());
     }
 
     @Test
