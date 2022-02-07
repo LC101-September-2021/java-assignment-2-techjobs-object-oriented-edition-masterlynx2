@@ -109,7 +109,7 @@ public class JobTest {
                 "CoreCompetency: Persistence\n", tester.toString());
     }
     @Test
-    public void ToStringValueDoesntExist(){
+    public void testToStringHandlesEmptyField(){
         tester8 = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
         System.out.println(tester.getLocation().getValue());
         assertEquals("OOPS! This job does not seem to exist.",tester8.toString());
