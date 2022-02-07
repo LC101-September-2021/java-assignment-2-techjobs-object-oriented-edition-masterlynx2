@@ -119,7 +119,7 @@ public class JobTest {
     }
     @Test
     public void testToStringHandlesEmptyField(){
-        job = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
+        Job job = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
         //System.out.println(tester.getLocation().getValue());
         assertEquals("OOPS! This job does not seem to exist.",job.toString());
     }
