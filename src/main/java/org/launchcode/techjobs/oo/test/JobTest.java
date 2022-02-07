@@ -88,7 +88,7 @@ public class JobTest {
 //        Boolean labelCoreCompetency = tester.toString().contains("CoreCompetency");
 //
 //        assertTrue(labelId && labelName && labelEmployer && labelLocation && labelPositionType && labelCoreCompetency == true);
-    }
+    //}
     @Test
     public void testToStringContainsCorrectLabelsAndData(){
 
