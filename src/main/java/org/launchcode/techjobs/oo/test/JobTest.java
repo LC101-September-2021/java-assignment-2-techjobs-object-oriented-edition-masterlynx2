@@ -47,7 +47,7 @@ public class JobTest {
 
     }
 
-    @test
+
     @Test
     public void testJobsForEquality() {
         assertFalse(tester instanceof Job != tester2 instanceof Job);
